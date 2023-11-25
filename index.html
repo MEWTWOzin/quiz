@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo Quiz</title>
+    <title>Jogo Quiz FMP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,7 +35,8 @@
 <body>
 
     <div class="quiz-container">
-        <h1>Jogo Quiz</h1>
+        <h1>Jogo Quiz FMP</h1>
+        <img src="FMP.jpg" alt="Logotipo da FMP">
         <div id="pergunta"></div>
 
         <div id="opcoes" class="opcao"></div>
@@ -48,40 +49,20 @@
     <script>
         const perguntas = [
             {
-                pergunta: "qual meu nome inteiro?",
-                opcoes: ["Hamilton Salome dos Santos", "Hamilton Salome da Silva", "Hamilton Salome Vieira", "Hamilton jacinto pinto"],
-                resposta: "Hamiltton Salome Vieira"
+                pergunta: "em que ano FMP foi fundada?",
+                opcoes: ["2003", "2004", "2005", "2006"],
+                resposta: "2005"
             },
             {
-                pergunta: "quando eu nasci?",
-                opcoes: ["31/11/2004", "31/12/2005", "24/12/2004", "31/12/2004"],
-                resposta: "31/12/2004"
+                pergunta: "Tem quantos cursos de graduação",
+                opcoes: ["4", "7", "11", "12"],
+                resposta: "4"
             },
             {
-                pergunta: "quantos irmãos e irmãs eu tenho?",
-                opcoes: ["4", "5", "6", "7"],
-                resposta: "6"
+                pergunta: "quais desses cursos tem na FMP?",
+                opcoes: ["Historia", "Sistemas da informação", "engenharia mecanica", "administração"],
+                resposta: "administração"
             },
-            {
-                pergunta: "qual foi meu maior rank no vava?",
-                opcoes: ["Bronze 3", "Prata 1", "Prata 2", "Prata 3"],
-                resposta: "Prata 2"
-            },
-            {
-                pergunta: "qual faculdade eu desisti no cpmeço do anop na UFSC?",
-                opcoes: ["Matematica", "geografia", "historia", "artes cenicas"],
-                resposta: "Matematica"
-            },
-            {
-                pergunta: "qual meu artista preferido atualmente?",
-                opcoes: ["Matue", "Major RD", "Kyan", "Ryu, The Runner"],
-                resposta: "Ryu, The Runner"
-            },
-            {
-                pergunta: "quem é meu idolo",
-                opcoes: ["Robespierre", "Kanye West", "Karl Marx", "Todos os anteriores"],
-                resposta: "Todos os anteriores"
-            }
         ];
 
         let perguntaAtual = 0;
@@ -134,6 +115,12 @@
                 resultadoElemento.textContent += " Fim do Jogo!";
             }
         }
+
+        carregarPergunta();
+    </script>
+
+</body>
+</html>
 
         carregarPergunta();
     </script>
